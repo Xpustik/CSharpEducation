@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task1A.CSharpBase", "Task.CSharpBase\Task1A.CSharpBase.csproj", "{496ED4EA-88B3-4516-B659-22525227479D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task1.CSharpBase", "Task1.CSharpBase", "{C68F8539-12A4-4E8D-B8D6-7360509C88ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task1B", "Task1B\Task1B.csproj", "{A94E23D0-BDDB-4782-98FF-B49344AFF10A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Checkin|Any CPU = Checkin|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{496ED4EA-88B3-4516-B659-22525227479D}.Checkin|Any CPU.ActiveCfg = Checkin|Any CPU
+		{496ED4EA-88B3-4516-B659-22525227479D}.Checkin|Any CPU.Build.0 = Checkin|Any CPU
+		{496ED4EA-88B3-4516-B659-22525227479D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{496ED4EA-88B3-4516-B659-22525227479D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{496ED4EA-88B3-4516-B659-22525227479D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{496ED4EA-88B3-4516-B659-22525227479D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A94E23D0-BDDB-4782-98FF-B49344AFF10A}.Checkin|Any CPU.ActiveCfg = Debug|Any CPU
+		{A94E23D0-BDDB-4782-98FF-B49344AFF10A}.Checkin|Any CPU.Build.0 = Debug|Any CPU
+		{A94E23D0-BDDB-4782-98FF-B49344AFF10A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A94E23D0-BDDB-4782-98FF-B49344AFF10A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A94E23D0-BDDB-4782-98FF-B49344AFF10A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A94E23D0-BDDB-4782-98FF-B49344AFF10A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{496ED4EA-88B3-4516-B659-22525227479D} = {C68F8539-12A4-4E8D-B8D6-7360509C88ED}
+		{A94E23D0-BDDB-4782-98FF-B49344AFF10A} = {C68F8539-12A4-4E8D-B8D6-7360509C88ED}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B620699E-17BC-44B7-A98A-467E84C53ED1}
+	EndGlobalSection
+EndGlobal
