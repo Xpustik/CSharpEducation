@@ -23,7 +23,7 @@ foreach (var item in str)
         strValue += char.ToUpper(item);
    
 }
-WriteLine(str.ToLower());
+WriteLine(str.ToLowerra
 WriteLine(strValue);
 strValue = string.Empty;
 

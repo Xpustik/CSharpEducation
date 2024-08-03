@@ -11,15 +11,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task1B", "Task1B\Task1B.csp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Practice2", "Practice2", "{AD4612D6-F21D-44FE-BC7C-3FBE02B8CE72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice2.Task1", "Practice2.Task1\Practice2.Task1.csproj", "{85E8B49E-046D-444D-8FBC-9EDF0E3195A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice2.Task1", "Practice2.Task1\Practice2.Task1.csproj", "{85E8B49E-046D-444D-8FBC-9EDF0E3195A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice2.Task2", "Practice2.Task2\Practice2.Task2.csproj", "{A6CD0EE8-54ED-4AF4-B829-2C74C8570C1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice2.Task2", "Practice2.Task2\Practice2.Task2.csproj", "{A6CD0EE8-54ED-4AF4-B829-2C74C8570C1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice2.Task3", "Practice.Task3\Practice2.Task3.csproj", "{9F7DEA6C-CFD6-43AD-9855-8A1FD01D5CBF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice2.Task3", "Practice.Task3\Practice2.Task3.csproj", "{9F7DEA6C-CFD6-43AD-9855-8A1FD01D5CBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice2.Task4", "Practice2.Task4\Practice2.Task4.csproj", "{7D830FE8-56A4-457C-B659-32BB0BBC9D95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice2.Task4", "Practice2.Task4\Practice2.Task4.csproj", "{7D830FE8-56A4-457C-B659-32BB0BBC9D95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice2.Task7", "Practice2.Task7\Practice2.Task7.csproj", "{1BD38CEC-F1E3-4824-B986-36B2A6302B6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice2.Task7", "Practice2.Task7\Practice2.Task7.csproj", "{1BD38CEC-F1E3-4824-B986-36B2A6302B6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Practice3", "Practice3", "{A767F066-301D-4CAB-A784-017BE15B3251}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice3.Task1", "Practice3.Task1\Practice3.Task1.csproj", "{1167E66B-5C3F-486B-95C0-F58633058B52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -70,6 +74,12 @@ Global
 		{1BD38CEC-F1E3-4824-B986-36B2A6302B6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BD38CEC-F1E3-4824-B986-36B2A6302B6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1BD38CEC-F1E3-4824-B986-36B2A6302B6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1167E66B-5C3F-486B-95C0-F58633058B52}.Checkin|Any CPU.ActiveCfg = Debug|Any CPU
+		{1167E66B-5C3F-486B-95C0-F58633058B52}.Checkin|Any CPU.Build.0 = Debug|Any CPU
+		{1167E66B-5C3F-486B-95C0-F58633058B52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1167E66B-5C3F-486B-95C0-F58633058B52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1167E66B-5C3F-486B-95C0-F58633058B52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1167E66B-5C3F-486B-95C0-F58633058B52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,6 +92,7 @@ Global
 		{9F7DEA6C-CFD6-43AD-9855-8A1FD01D5CBF} = {AD4612D6-F21D-44FE-BC7C-3FBE02B8CE72}
 		{7D830FE8-56A4-457C-B659-32BB0BBC9D95} = {AD4612D6-F21D-44FE-BC7C-3FBE02B8CE72}
 		{1BD38CEC-F1E3-4824-B986-36B2A6302B6A} = {AD4612D6-F21D-44FE-BC7C-3FBE02B8CE72}
+		{1167E66B-5C3F-486B-95C0-F58633058B52} = {A767F066-301D-4CAB-A784-017BE15B3251}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B620699E-17BC-44B7-A98A-467E84C53ED1}
