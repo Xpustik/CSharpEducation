@@ -2,6 +2,10 @@
   "solution": {
     "path": "CSharpEducation.Practice.sln",
     "projects": [
+      "Practice.Task3\\Practice2.Task3.csproj",
+      "Practice2.Task1\\Practice2.Task1.csproj",
+      "Practice2.Task2\\Practice2.Task2.csproj",
+      "Practice2.Task4\\Practice2.Task4.csproj",
       "Task.CSharpBase\\Task1A.CSharpBase.csproj"
     ]
   }
