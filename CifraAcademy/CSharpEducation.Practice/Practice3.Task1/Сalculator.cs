@@ -11,7 +11,7 @@ namespace Practice3.Task1
 
         public static double Sum(double x, double y) => x + y;
 
-        public static double Diff(double x, double y) => x- y;
+        public static double Diff(double x, double y) => x - y;
         
         public static double Multiplication(double x, double y) => x * y;
         
