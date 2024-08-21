@@ -4,6 +4,7 @@
     "projects": [
       "MathHelper\\MathHelperLib.csproj",
       "Person\\Person.csproj",
+      "Phonebook\\Phonebook.csproj",
       "Practice.Task3\\Practice2.Task3.csproj",
       "Practice2.Task10\\Practice2.Task10.csproj",
       "Practice2.Task1\\Practice2.Task1.csproj",
