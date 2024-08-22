@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Phonebook
+namespace Phonebooks
 {
     public class Abonent
     {
@@ -33,6 +33,9 @@ namespace Phonebook
                 numberPhone = value;
             }
         }
+
+        /*
+
         /// <summary>
         /// Выводит в консоль объект из списка "abonents" при совпадении любого поля с "name"
         /// </summary>
@@ -95,6 +98,9 @@ namespace Phonebook
             return item;
 
         }
+
+        */
+
         /// <summary>
         /// Выводит в консоль список
         /// </summary>
