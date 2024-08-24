@@ -1,0 +1,8 @@
+{
+  "solution": {
+    "path": "CSharpEducation.HomeWorks.sln",
+    "projects": [
+      "Phonebook\\Phonebook.csproj"
+    ]
+  }
+}

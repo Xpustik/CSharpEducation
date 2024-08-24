@@ -1,0 +1,20 @@
+{
+  "solution": {
+    "path": "CSharpEducation.Practice.sln",
+    "projects": [
+      "MathHelper\\MathHelperLib.csproj",
+      "Person\\Person.csproj",
+      "Practice.Task3\\Practice2.Task3.csproj",
+      "Practice2.Task10\\Practice2.Task10.csproj",
+      "Practice2.Task1\\Practice2.Task1.csproj",
+      "Practice2.Task2\\Practice2.Task2.csproj",
+      "Practice2.Task4\\Practice2.Task4.csproj",
+      "Practice2.Task7\\Practice2.Task7.csproj",
+      "Practice2.Task9\\Practice2.Task9.csproj",
+      "Practice3.Task1\\Practice3.Task1.csproj",
+      "Practice4.Task2\\Practice4.Task2.csproj",
+      "Practice5\\Practice5.csproj",
+      "Task.CSharpBase\\Task1A.CSharpBase.csproj"
+    ]
+  }
+}
