@@ -1,35 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Text.Json;
-using System.ComponentModel;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+//using System.Text.Json;
+//using System.ComponentModel;
 using Newtonsoft.Json;
-using System.Xml.Linq;
+//using System.Xml.Linq;
 
 namespace Phonebooks
 {
     public class PhoneBook
     {
+        /// <summary>
+        /// Список объектов класса Abonent
+        /// </summary>
         internal List<Abonent> abonent;
-
-        private PhoneBook()
-        {
-            if (File.Exists(this.DataBase()))
-                this.abonent = ConvDataBase(this.ReadFile());
-            else
-            { 
-                Console.WriteLine("Base is empty");
-               this.abonent = new List<Abonent>();
-            }
-        }
-
-        private static readonly Lazy<PhoneBook> instans =
-            new Lazy<PhoneBook>(() => new PhoneBook());
-
-        public static PhoneBook Instance => instans.Value;
-
+                
         #region Методы
 
         /// <summary>
@@ -162,7 +149,37 @@ namespace Phonebooks
                 Console.WriteLine("Абонетта нет в списке");
 
         }
+
         #endregion
 
+        #region Ленивая реализация паттерна Singleton
+
+        /// <summary>
+        /// Конструктор. При создании объекта класса PhoneBook проверяет наличие файла "notebook.txt",
+        /// при положительном резельтате читает данные из файла "notebook.txt" и 
+        /// записывает список объектов класса Abonent в поле abonent. Если файл отсутствует 
+        /// выводит сообщение "Base is empty" и создает пустой список объектов класса Abonent
+        /// </summary>
+        private PhoneBook()
+        {
+            if (File.Exists(this.DataBase()))
+                this.abonent = ConvDataBase(this.ReadFile());
+            else
+            {
+                Console.WriteLine("Base is empty");
+                this.abonent = new List<Abonent>();
+            }
+        }
+        /// <summary>
+        /// Вызывает конструктор класса PhoneBook только при первой инициализации
+        /// </summary>
+        private static readonly Lazy<PhoneBook> instans =
+            new Lazy<PhoneBook>(() => new PhoneBook());
+        /// <summary>
+        /// Свойство. Вызывает процедуру создания единственного объекта класса PhoneBook.
+        /// Ленивая инициализация паттерна Singleton
+        /// </summary>
+        public static PhoneBook Instance => instans.Value;
+        #endregion
     }
 }

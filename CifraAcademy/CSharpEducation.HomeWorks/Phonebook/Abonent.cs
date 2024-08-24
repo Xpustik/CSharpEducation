@@ -1,37 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
 
 namespace Phonebooks
 {
     public class Abonent
     {
-        private string name;
-        private string numberPhone;
-
-        public string Name
+       /// <summary>
+       /// Имя абонента
+       /// </summary>
+        public string Name { get; set; }
+        /// <summary>
+        /// Номер абонента
+        /// </summary>
+        public string NumberPhone {  get; set; }
+        /// <summary>
+        /// Создает объект класса с полями "Имя абонента" и "Номер абонента"
+        /// </summary>
+        /// <param name="name"> Имя абонента </param>
+        /// <param name="numberPhone"> Номер абонента </param>
+        public Abonent(string name, string numberPhone) 
         {
-            get
-            {
-                return name;
-            }
-            set
-            {
-                name = value;
-            }
-        }
-        public string NumberPhone
-        {
-            get
-            {
-                return numberPhone;
-            }
-            set 
-            {
-                numberPhone = value;
-            }
+            this.Name = name;
+            this.NumberPhone = numberPhone;
         }
                
         /// <summary>
@@ -40,22 +33,18 @@ namespace Phonebooks
         /// <returns>Объект класса Abonent с поля Name and NumberPhone </returns>
         internal static Abonent CreatAbonent()
         {
-            var item = new Abonent();
-
             Console.WriteLine("Введите имя абонента");
             string? nameAbonent = Console.ReadLine();
-            item.Name = nameAbonent;
-
+           
             Console.WriteLine("Введите номер абонента");
             string? numberAbonent = Console.ReadLine();
-            item.NumberPhone = numberAbonent;
+            
+            var item = new Abonent(nameAbonent, numberAbonent);
 
             return item;
 
         }
-
-      
-
+           
         /// <summary>
         /// Выводит в консоль список
         /// </summary>

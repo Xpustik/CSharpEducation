@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿//using System.Collections;
 
 namespace Phonebooks
 {
@@ -27,8 +27,7 @@ namespace Phonebooks
                     case "1":
                         Console.WriteLine("Введите имя или номер абонента");
                         string value = Console.ReadLine();
-                       // if (value == null) value = " ";
-                       // abonents.FindAbonent(abonents.abonent, value);
+                        abonents.FindAbonent(abonents.abonent, value);
                         break;
                     case "2":
                        abonents.AddAbonent(abonents.abonent, Abonent.CreatAbonent());
