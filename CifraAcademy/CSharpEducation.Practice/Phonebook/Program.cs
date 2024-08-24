@@ -18,9 +18,6 @@ namespace Phonebooks
                 "5.Выход \n";
             Console.WriteLine(commands);
 
-            //Console.WriteLine("Путь : " + new FileInfo(typeof(PhoneBook).Assembly.Location).DirectoryName);
-            //Console.WriteLine(Path.Combine(new FileInfo(typeof(PhoneBook).Assembly.Location).DirectoryName, "notebook.txt"));
-           
             do 
             {               
                 result = Console.ReadLine();

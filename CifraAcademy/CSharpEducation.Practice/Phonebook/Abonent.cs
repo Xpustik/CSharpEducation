@@ -33,52 +33,7 @@ namespace Phonebooks
                 numberPhone = value;
             }
         }
-
-        /*
-
-        /// <summary>
-        /// Выводит в консоль объект из списка "abonents" при совпадении любого поля с "name"
-        /// </summary>
-        /// <param name="abonents"></param>
-        /// <param name="name"></param>
-        public static void FindAbonent(List<Abonent> abonents,string name)
-        {
-            foreach (var item in abonents)
-            {
-                if (item.Name == name)
-                    Console.WriteLine(item.Name + " " +  item.NumberPhone);
-                if (item.NumberPhone == name)
-                    Console.WriteLine(item.Name + " " + item.NumberPhone);
-                if ((item.Name != name) && (item.NumberPhone != name))
-                    Console.WriteLine("Абонетта нет в списке");
-            }
-        }
-        /// <summary>
-        /// Удаляет объект из списка "abonents" при совподении любого поля с "name"
-        /// </summary>
-        /// <param name="abonents"></param>
-        /// <param name="name"></param>
-        public void DelAbonent(List<Abonent> abonents, string name) 
-        {
-            foreach (var item in abonents)
-            {
-                if (item.Name == name)
-                    abonents.Remove(item);
-                else if (item.NumberPhone == name) 
-                    abonents.Remove(item);
-            }
-        }
-        /// <summary>
-        /// Добовляет объект класса "abonent" в  список "abonents" при условии что похожий объект отсутствует
-        /// </summary>
-        /// <param name="abonents"></param>
-        /// <param name="abonent"></param>
-        public static void AddAbonent(List<Abonent> abonents, Abonent abonent)
-        {
-            if (abonents == null) abonents.Add(abonent);
-            else if (abonents.Contains(abonent) == false) abonents.Add(abonent);
-            else Console.WriteLine("Абонет уже есть в списке");
-        }
+               
         /// <summary>
         /// Создает новый объект класса Abonent и предлогает заполнить поля Name and NumberPhone
         /// </summary>
@@ -99,7 +54,7 @@ namespace Phonebooks
 
         }
 
-        */
+      
 
         /// <summary>
         /// Выводит в консоль список
