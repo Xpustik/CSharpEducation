@@ -2,7 +2,8 @@
   "solution": {
     "path": "CSharpEducation.HomeWorks.sln",
     "projects": [
-      "Phonebook\\Phonebook.csproj"
+      "Phonebook\\Phonebook.csproj",
+      "TicTacToe\\TicTacToe.csproj"
     ]
   }
 }
