@@ -8,7 +8,7 @@ namespace TicTacToe
 {
     internal class DesignField
     {
-     /// <summary>
+      /// <summary>
      /// Выводит в консоль игровое поле
      /// </summary>
      /// <param name="field"> игровое поле </param>
@@ -64,6 +64,12 @@ namespace TicTacToe
               Console.ForegroundColor = ConsoleColor.Gray;
           };
       }
+      /// <summary>
+      /// Выводит в консоль победителя
+      /// </summary>
+      /// <param name="chekPlayer1"> "вес" игрока, если 3 то win </param>
+      /// <param name="checkPlayer2">"вес" игрока, если 3 то win </param>
+      /// <returns></returns>
       internal static bool WinPlayer(int chekPlayer1, int checkPlayer2) 
       {
          if (chekPlayer1 == 3)
@@ -82,14 +88,6 @@ namespace TicTacToe
          }
          return false;
       }
-    
-      internal static void PrintDraw() 
-      {
-            foreach (var item in Field.drawPlayer)
-            {
-                Console.Write(item + " ");
-            }
-            Console.WriteLine();
-      }
+          
     }
 }

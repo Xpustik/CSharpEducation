@@ -26,8 +26,6 @@ namespace TicTacToe
         {
             for (int i = 0; i < 3; i++) 
             {
-                bool plaer1 = false;
-                bool plaer2 = false;
                 int chekPlayer1 = 0;
                 int chekPlayer2 = 0;
                 bool value;
@@ -41,16 +39,14 @@ namespace TicTacToe
                         // проверяем кто сделал ход
                         if (playerField[i + j] == true)
                         {
-                            plaer2 = true;
                             chekPlayer1 += 1;
                         }
                         else if (playerField[i + j] != true) 
                         { 
-                            plaer1 = true;
                             chekPlayer2 += 1;
                         }
                     // Проверка на ничью линии
-                    if ((chekPlayer2 == 1) && (chekPlayer1 == 1)) drawPlayer[i]=true;
+                    if ((chekPlayer2 >= 1) && (chekPlayer1 >= 1)) drawPlayer[i]=true;
                 }
               
               value = DesignField.WinPlayer(chekPlayer1, chekPlayer2);
@@ -66,8 +62,6 @@ namespace TicTacToe
             int ij = 3;
             for (int i = 0; i < 9; i += 3)
             {
-                bool plaer1 = false;
-                bool plaer2 = false;
                 int chekPlayer1 = 0;
                 int chekPlayer2 = 0;
                 bool value;
@@ -82,16 +76,14 @@ namespace TicTacToe
                         // проверяем кто сделал ход
                         if (playerField[i + j] == true)
                         {
-                            plaer2 = true;
-                            chekPlayer1 += 1;
+                           chekPlayer1 += 1;
                         }
                         else if (playerField[i + j] != true)
                         {
-                            plaer1 = true;
-                            chekPlayer2 += 1;
+                           chekPlayer2 += 1;
                         }
                     // Проверка на ничью линии
-                    if ((chekPlayer2 == 1) && (chekPlayer1 == 1)) drawPlayer[ij] = true;                    
+                    if ((chekPlayer2 >= 1) && (chekPlayer1 >= 1)) drawPlayer[ij] = true;                    
                                       
                 } 
                 ij++;
@@ -106,8 +98,6 @@ namespace TicTacToe
         /// <returns> совпало три или нет </returns>
         internal static bool CheckDiagonalField() 
         {
-            bool plaer1 = false;
-            bool plaer2 = false;
             int chekPlayer1 = 0;
             int chekPlayer2 = 0;
             bool value;
@@ -119,17 +109,15 @@ namespace TicTacToe
                 {
                     if (Field.playerField[i] == true)
                     {
-                        plaer2 = true;
-                        chekPlayer1 += 1;
+                       chekPlayer1 += 1;
                     }
                     else if (Field.playerField[i] != true)
                     {
-                        plaer1 = true;
-                        chekPlayer2 += 1;
+                       chekPlayer2 += 1;
                     }
                 }
             }
-            if ((chekPlayer2 == 1) && (chekPlayer1 == 1)) drawPlayer[6] = true;
+            if ((chekPlayer2 >= 1) && (chekPlayer1 >= 1)) drawPlayer[6] = true;
             
             value = DesignField.WinPlayer(chekPlayer1, chekPlayer2);
             if (value == true) return true;
@@ -141,8 +129,6 @@ namespace TicTacToe
         /// <returns> совпало три или нет </returns>
         internal static bool CheckDiagonal1Field()
         {
-            bool plaer1 = false;
-            bool plaer2 = false;
             int chekPlayer1 = 0;
             int chekPlayer2 = 0;
             bool value;
@@ -154,17 +140,15 @@ namespace TicTacToe
                 {
                     if (Field.playerField[i] == true)
                     {
-                        plaer2 = true;
                         chekPlayer1 += 1;
                     }
                     else if (Field.playerField[i] != true)
                     {
-                        plaer1 = true;
                         chekPlayer2 += 1;
                     }
                 } 
             }
-            if ((chekPlayer2 == 1) && (chekPlayer1 == 1)) drawPlayer[7] = true;
+            if ((chekPlayer2 >= 1) && (chekPlayer1 >= 1)) drawPlayer[7] = true;
             
             value = DesignField.WinPlayer(chekPlayer1, chekPlayer2);
             if (value == true) return true;
@@ -211,10 +195,11 @@ namespace TicTacToe
             }
         }
         /// <summary>
-        /// Проверка вводимого значения в диапозоне от 1 до 9 
+        /// Проверка вводимого значения адреса поля в диапозоне от 1 до 9 
         /// </summary>
-        /// <param name="result"></param>
-        /// <returns></returns>
+        /// <param name="result"> проверяемое значение </param>
+        /// <returns> если в диапозоне от 1 до 9 - true, если нет - false. 
+        /// И выводит сообщение в консоль "Некоректный ход" </returns>
         internal static bool CheckTurn(int result) 
         {
             //int result = ReadTurn();
@@ -227,11 +212,11 @@ namespace TicTacToe
             return false;
         }
         /// <summary>
-        /// проверка на ничью
+        /// проверка на ничью и выигрышный ход
         /// </summary>
-        /// <param name="count"></param>
-        /// <returns> возвращает true если ничья </returns>
-        internal static bool GameOver(int count) 
+        /// <returns> если ничья выводит сообщение в консоль "Game Over Ничья!!!" и возвращает - true.
+        ///  Если выигрышный ход возвращает  - true. В остальных случаях возвращает false </returns>
+        internal static bool GameOver() 
         {
            int counter = 0;
            bool valueVer = CheckVerField(); 
@@ -243,17 +228,18 @@ namespace TicTacToe
             {
                 if (drawPlayer[i] == true) counter++;
             }
-            if (counter == 5) 
+            if (counter == 7) 
             {
-                Console.WriteLine("Game Over Ничья!!!");
+                Console.WriteLine("\tGame Over Ничья!!!");
                 return true;
             }
-            //if ((valueHor) || (valueVer) || (valueDiagonal) || (valueDiagonal1)) return true;
+            if ((valueHor) || (valueVer) || (valueDiagonal1) || (valueDiagonal)) return true; 
 
-            Console.WriteLine($"Счетчик линий {counter}");
             return false;
         }
-
+        /// <summary>
+        /// Запись в массивы полей false, чистит игровое поле
+        /// </summary>
         internal static void ClearField() 
         {
             for (int i = 0; i < 8; i++) 
