@@ -8,7 +8,7 @@ namespace Practice5
 {
     internal class Employee
     {
-        internal static int count = 0;
+        public static int count = 0;
         public string Name {  get; set; }
         public decimal Salary {  get; set; }
 

@@ -20,6 +20,7 @@
                 ArgumentException.Equals(a,a);
                
             }
+            return new int[0, 0];
         }
     }
 }

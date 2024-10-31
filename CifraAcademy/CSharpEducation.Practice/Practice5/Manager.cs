@@ -9,16 +9,17 @@ namespace Practice5
     internal class Manager : Employee
     {
         
-        public int TeamSize { get; set; }
+        public static int TeamSize { get; set; }
 
-        public Manager(string name, decimal salary, int teamSize) : base( name, salary) 
+        public Manager(string name, decimal salary) : base( name, salary) 
         {
-            this.TeamSize = teamSize;
-            count++;
+            //count++;
+            TeamSize = count;
         }
         ~Manager() 
         {
-            count--;
+           // count--;
+            TeamSize = count;
         }
         internal override decimal CalculateBonus()
         {

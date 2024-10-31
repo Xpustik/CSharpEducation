@@ -1,0 +1,8 @@
+{
+  "solution": {
+    "path": "LibsClassEducatoin.sln",
+    "projects": [
+      "LibsClassEducatoin\\LibsClassEducatoin.csproj"
+    ]
+  }
+}
